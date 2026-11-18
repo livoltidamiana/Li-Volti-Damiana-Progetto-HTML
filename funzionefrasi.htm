@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fase 9: Similarità frase-frasi</title>
+  <style>
+    body {
+      line-height: 1.6;
+      background-color: whitesmoke;
+      color: darkgreen;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer, main {
+      padding: 20px 10%;
+    }
+
+    header {
+      background-color: #e6f2e6;
+      border-bottom: 1px solid #ccc;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: darkgreen;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fase 9: Calcolo della similarità tra una frase data in input e le frasi del testo</h1>
+    <nav>
+      <a href="fasi.htm">Torna indietro</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="image-container">
+      <img src="funzionefrasisimili.jpg" alt="Similarità frase-frasi">
+    </div>
+
+    <p>
+      In questa fase, ho definito una funzione che permette di confrontare una frase inserita manualmente con tutte le frasi del testo. Per farlo, utilizzo gli embedding delle frasi (calcolati in precedenza) e l'embedding della frase data in input (che calcolerò al momento).
+    </p>
+
+    <p>
+      Il confronto avviene calcolando la similarità tra i vettori ottenuti. In questo modo, posso individuare la frase (o le frasi) che hanno un significato più vicino a quello espresso dalla frase fornita. 
+    </p>
+  </main>
+</body>
+</html>

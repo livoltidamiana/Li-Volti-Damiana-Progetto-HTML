@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasi del progetto</title>
+    <style>
+        body {
+            line-height: 1.6;
+            background-color: whitesmoke;
+            color: darkgreen;
+            margin: 0px;
+            text-align: center;
+        }
+        h1, h2 {
+            color: darkgreen;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            ol {
+            padding-left: 1rem;
+            }
+            ol li {
+            font-size: 1rem;
+            }
+            .links {
+            justify-content: center;
+            }
+            .links a {
+            font-size: 0.85rem;
+            padding: 4px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+        <h1>Fasi del progetto</h1>
+
+        <nav class="navbar bg-transparent">
+         <div class="container d-flex justify-content-between align-items-center">
+          <a class="nav-link text-dark p-0" href="index.html">Torna alla home</a>
+         </div>
+        </nav>
+        <div class="section">
+        <h2>Fasi del Progetto</h2>
+          <ol>
+            <li><strong>Lettura del file di testo:</strong> il contenuto del file introduzione.txt viene letto e salvato in una variabile.</li>
+            <nav class="navbar bg-transparent">
+              <div class="container d-flex justify-content-between align-items-center">
+                <a class="nav-link text-dark p-0" href="letturafile.htm">Clicca qui per vedere come ho letto il file</a>
+              </div>
+            </nav>
+            <li><strong>Rimozione della punteggiatura:</strong> si eliminano tutti i segni di punteggiatura dal testo.</li>
+            <nav class="navbar bg-transparent">
+              <div class="container d-flex justify-content-between align-items-center">
+                <a class="nav-link text-dark p-0" href="punteggiatura.htm">Clicca qui per vedere come ho rimosso la punteggiatura</a>
+              </div>
+            </nav>
+            <li><strong>Suddivisione in frasi e tokenizzazione:</strong> il testo viene suddiviso in frasi e in parole (token).</li>
+            <nav class="navbar bg-transparent">
+              <div class="container d-flex justify-content-between align-items-center">
+                <a class="nav-link text-dark p-0" href="tokenizzazione.htm">Clicca qui per vedere come ho tokenizzato</a>
+              </div>
+            </nav>
+            <li><strong>Lemmatizzazione:</strong> ogni parola viene ridotta alla sua forma base (lemma).</li>
+            <nav class="navbar bg-transparent">
+              <div class="container d-flex justify-content-between align-items-center">
+                <a class="nav-link text-dark p-0" href="lemmatizzazione.htm">Clicca qui per vedere come ho lemmatizzato</a>
+              </div>
+            </nav>
+            <li><strong>Embedding lemmi:</strong> si utilizza il modello "distiluse-base-multilingual-cased-v1" per rappresentare lemmi come vettori numerici.</li>
+            <nav class="navbar bg-transparent">
+              <div class="container d-flex justify-content-between align-items-center">
+                <a class="nav-link text-dark p-0" href="embeddinglemmi.htm">Clicca qui per vedere come ho impostato una funzione per trovare gli embedding dei lemmi</a>
+              </div>
+            </nav>
+            <li><strong>Calcolo similarità lemmi - parola input:</strong> si calcola la similarità tra una parola in input e i lemmi usando il coseno di similarità (cos_sim).</li>
+            <nav class="navbar bg-transparent">
+              <div class="container d-flex justify-content-between align-items-center">
+                <a class="nav-link text-dark p-0" href="similaritalemmi.htm">Clicca qui per vedere come ho impostato una funzione per trovare la similarità tra una parola input e un lemma qualsiasi</a>
+              </div>
+            </nav>
+            <li><strong>Embedding frasi:</strong> si utilizza il modello "distiluse-base-multilingual-cased-v1" per rappresentare le frasi come vettori numerici, successivamente si salvano in un file json.</li>
+            <nav class="navbar bg-transparent">
+              <div class="container d-flex justify-content-between align-items-center">
+                <a class="nav-link text-dark p-0" href="embeddingfrasi.htm">Clicca qui per vedere come ho impostato una funzione per trovare gli embedding delle frasi</a>
+              </div>
+            </nav>
+            <li><strong>Calcolo similarità frasi - parola input:</strong> si calcola la similarità tra una parola data in input e le frasi usando il coseno di similarità (cos_sim).</li>
+            <nav class="navbar bg-transparent">
+              <div class="container d-flex justify-content-between align-items-center">
+                <a class="nav-link text-dark p-0" href="similaritafrasi.htm">Clicca qui per vedere come ho impostato una funzione per trovare la similarità tra una parola input e le frasi del testo</a>
+              </div>
+            </nav>
+            <li><strong>Calcolo similarità frasi - frase input:</strong> si calcola la similarità tra una frase data in input e le frasi del testo usando il coseno di similarità (cos_sim).</li>
+            <nav class="navbar bg-transparent">
+              <div class="container d-flex justify-content-between align-items-center">
+                <a class="nav-link text-dark p-0" href="funzionefrasi.htm">Clicca qui per vedere come ho impostato una funzione per trovare la similarità tra una frase data in input e le frasi del testo</a>
+              </div>
+            </nav>
+            <li><strong>Implementazione chatbot:</strong> È stato implementato un semplice chatbot interattivo in stile ELIZA che risponde a tre tipi di input. </li>
+            <nav class="navbar bg-transparent">
+              <div class="container d-flex justify-content-between align-items-center">
+                <a class="nav-link text-dark p-0" href="chatbot.htm">Clicca qui per vedere come ho impostato il chatbot</a>
+              </div>
+            </nav>
+          </ol>
+    </div>
+
+</body>
+</html>

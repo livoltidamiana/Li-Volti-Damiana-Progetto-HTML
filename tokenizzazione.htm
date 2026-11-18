@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fase 3: Tokenizzazione</title>
+  <style>
+    body {
+      line-height: 1.6;
+      background-color: whitesmoke;
+      color: darkgreen;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer, main {
+      padding: 20px 10%;
+    }
+
+    header {
+      background-color: #e6f2e6;
+      border-bottom: 1px solid #ccc;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: darkgreen;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.95em;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+      color: #444;
+    }
+
+    .alt-method {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fase 3: Suddivisione in frasi e tokenizzazione</h1>
+    <nav>
+      <a href="fasi.htm">Torna indietro</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="image-container">
+      <img src="suddivisioneinfrasietokenizzazione.jpg" alt="Suddivisione e tokenizzazione">
+    </div>
+
+    <p>
+      Per effettuare entrambe le operazioni ho importato il modulo nltk. Ho usato la funzione chiamata "sent_tokenize" per suddividere il testo in frasi 
+      e poi "word_tokenize" per estrarre i singoli token contenuti in ciascuna frase.
+    </p>
+
+    <div class="alt-method">
+      <p>
+        Per suddividere in frasi, avrei potuto usare anche altri metodi studiati quest'anno, come l'impostazione di un segmentatore tramite PunktSentenceTokenizer. 
+        Ecco un esempio:
+      </p>
+      <div class="image-container">
+        <img src="metodoalternativofrasi.jpg" alt="Metodo alternativo con Punkt">
+      </div>
+    </div>
+
+    <div class="alt-method">
+      <p>
+        Per la tokenizzazione, un'alternativa sarebbe l'utilizzo del tokenizzatore TreebankWordTokenizer. Ecco come:
+      </p>
+      <div class="image-container">
+        <img src="metoodalternativotokenizzare.jpg" alt="Metodo alternativo con Treebank">
+      </div>
+    </div>
+
+    <div class="alt-method">
+      <p>
+        Un altro approccio possibile è l'uso della libreria spacy per la tokenizzazione, ad esempio nel modo seguente:
+      </p>
+      <div class="image-container">
+        <img src="tokenizzspacy.jpg" alt="Tokenizzazione con Spacy">
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    In questa fase ho confrontato più metodi per la suddivisione e la tokenizzazione del testo, scegliendo quello più adatto alle mie esigenze.
+  </footer>
+</body>
+</html>

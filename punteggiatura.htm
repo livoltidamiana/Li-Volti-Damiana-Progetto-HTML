@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fase 2: Punteggiatura</title>
+  <style>
+    body {
+      line-height: 1.6;
+      background-color: whitesmoke;
+      color: darkgreen;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer, main {
+      padding: 20px 10%;
+    }
+
+    header {
+      background-color: #e6f2e6;
+      border-bottom: 1px solid #ccc;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: darkgreen;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.95em;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fase 2: Rimozione della punteggiatura</h1>
+    <nav>
+      <a href="fasi.htm">Torna indietro</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="image-container">
+      <img src="punteggiatura.jpg" alt="Rimozione della punteggiatura">
+    </div>
+
+    <p>
+      Ho deciso di rimuovere la punteggiatura dal testo per facilitare la fase successiva della lemmatizzazione, 
+      che è stata eseguita proprio sulla versione del testo senza segni di punteggiatura. 
+      Per farlo, ho semplicemente sostituito con uno spazio tutti i simboli contenuti nella stringa chiamata "string.punctuation".
+    </p>
+  </main>
+</body>
+</html>

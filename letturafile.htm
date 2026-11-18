@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fase 1: Lettura del file</title>
+  <style>
+    body {
+      line-height: 1.6;
+      background-color: whitesmoke;
+      color: darkgreen;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer, main {
+      padding: 20px 10%;
+    }
+
+    header {
+      background-color: #e6f2e6;
+      border-bottom: 1px solid #ccc;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: darkgreen;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.95em;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fase 1: Lettura del file</h1>
+    <nav>
+      <a href="fasi.htm">Torna indietro</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="image-container">
+      <img src="leggofile.jpg" alt="Lettura del file">
+    </div>
+
+    <p>
+      Per leggere il file ho utilizzato la funzione with open, 
+      aprendo il file in modalità lettura ("r") e specificando la codifica "utf-8". 
+      Ho salvato il contenuto nella variabile testo tramite il metodo .read().
+    </p>
+  </main>
+
+  <footer>
+    In alternativa, avrei potuto usare il metodo tradizionale: aprire il file assegnandolo a una variabile f
+    con open("nomefile", "r") e poi chiuderlo manualmente con f.close().
+  </footer>
+</body>
+</html>

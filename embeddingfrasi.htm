@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fase 7: Embedding delle frasi</title>
+  <style>
+    body {
+      line-height: 1.6;
+      background-color: whitesmoke;
+      color: darkgreen;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer, main {
+      padding: 20px 10%;
+    }
+
+    header {
+      background-color: #e6f2e6;
+      border-bottom: 1px solid #ccc;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: darkgreen;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.95em;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fase 7: Calcolo degli embedding delle frasi</h1>
+    <nav>
+      <a href="fasi.htm">Torna indietro</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="image-container">
+      <img src="embeddingfrasi.jpg" alt="Embedding delle frasi">
+    </div>
+
+    <p>
+      Per calcolare gli embedding delle frasi ho utilizzato, anche in questo caso, la libreria sentence_transformers e il modello "distiluse-base-multilingual-cased-v1". Questo modello trasforma ogni frase in un vettore numerico che ne rappresenta il significato.
+    </p>
+
+    <p>
+      Tutti gli embedding ottenuti sono stati salvati in un file JSON, così da poterli riutilizzare senza doverli ricreare ogni volta. Ho evitato di stampare le frasi durante l’esecuzione, perché essendo molte avrebbero rallentato la verifica del programma.
+    </p>
+  </main>
+
+  <footer>
+    Il salvataggio in formato JSON rende più agevole la gestione dei dati e permette di consultare rapidamente i risultati dell’analisi semantica in fasi successive del progetto.
+  </footer>
+</body>
+</html>

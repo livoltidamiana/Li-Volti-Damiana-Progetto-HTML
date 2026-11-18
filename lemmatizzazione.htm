@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fase 4: Lemmatizzazione</title>
+  <style>
+    body {
+      line-height: 1.6;
+      background-color: whitesmoke;
+      color: darkgreen;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer, main {
+      padding: 20px 10%;
+    }
+
+    header {
+      background-color: #e6f2e6;
+      border-bottom: 1px solid #ccc;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: darkgreen;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.95em;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fase 4: Lemmatizzazione del testo privo di punteggiatura</h1>
+    <nav>
+      <a href="fasi.htm">Torna indietro</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="image-container">
+      <img src="lemmatizzazione.jpg" alt="Processo di lemmatizzazione">
+    </div>
+
+    <p>
+      In questa fase ho utilizzato la libreria spacy per effettuare la lemmatizzazione del testo. Ho caricato il modello italiano chiamato "it_core_news_sm" 
+      e applicato il modulo nlp al testo privo di punteggiatura. Da ciascun token ottenuto, ho estratto il lemma corrispondente, ovvero la forma base della parola, 
+      attraverso l'attributo chiamato "lemma_".
+    </p>
+  </main>
+
+  <footer>
+    La lemmatizzazione è una fase fondamentale per l’analisi linguistica, in quanto consente di ricondurre ogni parola alla sua radice lessicale, 
+    facilitando il confronto e la categorizzazione delle forme verbali, nominali e aggettivali presenti nel testo.
+  </footer>
+</body>
+</html>
